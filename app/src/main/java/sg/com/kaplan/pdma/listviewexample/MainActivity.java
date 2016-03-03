@@ -21,10 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Construct the data source
         ArrayList<Event> events = new ArrayList<Event>();
-        events.add(new Event("Kaplan Open House",
-                "WE Level 2", "27 Feb 2016 2pm"));
-        events.add(new Event("Ice cream challenge",
-                "Bugis+", "27 Feb 2016 3pm"));
+        events.add(new Event("Kaplan Open House", "WE Level 2", "27 Feb 2016 2pm"));
+        events.add(new Event("Ice cream challenge", "Bugis+", "27 Feb 2016 3pm"));
+        //the data can be from a JSON backend, now simply hardcoded
 
         // Create the adapter to convert the array to views
         EventsAdapter adapter = new EventsAdapter(this, events);
